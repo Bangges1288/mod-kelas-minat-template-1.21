@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mod-kelas-minat",
+	"version": "${version}",
+	"name": "Mod Kelas Minat",
+	"description": "Simple Mod for little expansion",
+	"authors": [
+		"ImbangAbd"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Bangges1288/mod-kelas-minat-template-1.21"
+	},
+	"license": "SMP",
+	"icon": "assets/mod-kelas-minat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.imbangabd.kelasminat.ModKelasMinat"
+		],
+		"fabric-datagen": [
+			"net.imbangabd.kelasminat.ModKelasMinatDataGenerator"
+		],
+		"client":[
+			"net.imbangabd.kelasmiant.ModKelasMinatClient"
+		]
+	},
+	"mixins": [
+		"mod-kelas-minat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
